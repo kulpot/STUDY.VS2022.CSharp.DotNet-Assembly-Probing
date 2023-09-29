@@ -602,6 +602,361 @@ C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
 C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly ProbingProgram.exe
 Kulpots moooooooooooo version 1
 
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probingren Farm.dll Farm.exe
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:45 am    <DIR>          .
+29/09/2023  11:45 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  05:17 am             3,584 Farm.exe <-------rename from Farm.dll
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:43 am            25,656 Program.cs
+29/09/2023  11:42 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               6 File(s)         36,517 bytes
+               5 Dir(s)  487,662,612,480 bytes free
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>ildasm /out:moo.txt Program.exe
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>moo.txt
+----------------------NOTEPAD: moo.txt------------------------
+
+
+//  Microsoft (R) .NET Framework IL Disassembler.  Version 4.8.3928.0
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+
+
+
+// Metadata version: v4.0.30319
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern Farm
+{
+  .ver 1:0:0:0
+}
+.assembly Program
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                             63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 07 01 00 00 00 00 ) 
+
+  .hash algorithm 0x00008004
+  .ver 0:0:0:0
+}
+.module Program.exe
+// MVID: {36F5A6DA-985D-4320-929B-351CE9094CFB}
+.custom instance void System.Runtime.CompilerServices.RefSafetyRulesAttribute::.ctor(int32) = ( 01 00 0B 00 00 00 00 00 ) 
+.imagebase 0x00400000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x06780000
+
+
+// =============== CLASS MEMBERS DECLARATION ===================
+
+.class private auto ansi sealed beforefieldinit Microsoft.CodeAnalysis.EmbeddedAttribute
+       extends [mscorlib]System.Attribute
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       8 (0x8)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Attribute::.ctor()
+    IL_0006:  nop
+    IL_0007:  ret
+  } // end of method EmbeddedAttribute::.ctor
+
+} // end of class Microsoft.CodeAnalysis.EmbeddedAttribute
+
+.class private auto ansi sealed beforefieldinit System.Runtime.CompilerServices.RefSafetyRulesAttribute
+       extends [mscorlib]System.Attribute
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void [mscorlib]System.AttributeUsageAttribute::.ctor(valuetype [mscorlib]System.AttributeTargets) = ( 01 00 02 00 00 00 02 00 54 02 0D 41 6C 6C 6F 77   // ........T..Allow
+                                                                                                                         4D 75 6C 74 69 70 6C 65 00 54 02 09 49 6E 68 65   // Multiple.T..Inhe
+                                                                                                                         72 69 74 65 64 00 )                               // rited.
+  .field public initonly int32 Version
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor(int32 A_1) cil managed
+  {
+    // Code size       15 (0xf)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Attribute::.ctor()
+    IL_0006:  nop
+    IL_0007:  ldarg.0
+    IL_0008:  ldarg.1
+    IL_0009:  stfld      int32 System.Runtime.CompilerServices.RefSafetyRulesAttribute::Version
+    IL_000e:  ret
+  } // end of method RefSafetyRulesAttribute::.ctor
+
+} // end of class System.Runtime.CompilerServices.RefSafetyRulesAttribute
+
+.class private auto ansi beforefieldinit MainClass
+       extends [mscorlib]System.Object
+{
+  .method private hidebysig static void  Main() cil managed
+  {
+    .entrypoint
+    // Code size       8 (0x8)
+    .maxstack  8
+    IL_0000:  nop
+    IL_0001:  call       void [Farm]Cow::Moo()
+    IL_0006:  nop
+    IL_0007:  ret
+  } // end of method MainClass::Main
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       8 (0x8)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  nop
+    IL_0007:  ret
+  } // end of method MainClass::.ctor
+
+} // end of class MainClass
+
+
+// =============================================================
+
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file moo.res
+
+
+----------------------NOTEPAD: moo.txt------------------------END
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>Program.exe
+Kulpots moooooooooooo version 1
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>erase *.exe
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:48 am    <DIR>          .
+29/09/2023  11:48 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:46 am             1,128 moo.res
+29/09/2023  11:46 am             4,880 moo.txt
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:48 am            32,022 Program.cs
+29/09/2023  11:33 am    <DIR>          Properties
+               6 File(s)         41,211 bytes
+               5 Dir(s)  487,659,433,984 bytes free
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>erase moo.*
+-----------CREATED---------------------
+[assembly: AssemblyVersion("1.0.0.0")]
+
+public class Cow
+{
+    public static void Moo()
+    {
+        Console.WriteLine("Kulpots moooooooooooo version 1");
+    }
+}
+
+//class MainClass
+//{
+//    static void Main()
+//    {
+//        Cow.Moo();
+//    }
+//}
+
+----------------------------------------------
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>csc /t:library /out:Farm.dll /keyfile:KulpotKey.snk Program.cs
+Microsoft (R) Visual C# Compiler version 4.7.0-3.23416.8 (43b0b05c)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+-----------CREATED---------------------
+//[assembly: AssemblyVersion("1.0.0.0")]
+
+//public class Cow
+//{
+//    public static void Moo()
+//    {
+//        Console.WriteLine("Kulpots moooooooooooo version 1");
+//    }
+//}
+
+class MainClass
+{
+    static void Main()
+    {
+        Cow.Moo();
+    }
+}
+
+----------------------------------------------
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>csc /r:Farm.dll Program.cs
+Microsoft (R) Visual C# Compiler version 4.7.0-3.23416.8 (43b0b05c)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:53 am    <DIR>          .
+29/09/2023  11:53 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  11:50 am             4,096 Farm.dll
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:53 am            34,323 Program.cs
+29/09/2023  11:53 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               6 File(s)         45,696 bytes
+               5 Dir(s)  487,654,670,336 bytes free
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>Program.exe
+Kulpots moooooooooooo version 1
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>ren Farm.dll Farm.exe
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>Program.exe
+Kulpots moooooooooooo version 1
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>md Farm
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>move Farm.dll Farm
+The system cannot find the file specified.
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:55 am    <DIR>          .
+29/09/2023  11:55 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  11:55 am    <DIR>          Farm
+29/09/2023  11:50 am             4,096 Farm.exe
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:54 am            35,574 Program.cs
+29/09/2023  11:53 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               6 File(s)         46,947 bytes
+               6 Dir(s)  487,654,068,224 bytes free
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>move Farm.exe Farm
+        1 file(s) moved.
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:56 am    <DIR>          .
+29/09/2023  11:56 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  11:56 am    <DIR>          Farm
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:56 am            36,746 Program.cs
+29/09/2023  11:53 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               5 File(s)         44,023 bytes
+               6 Dir(s)  487,653,834,752 bytes free
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>Program.exe
+Kulpots moooooooooooo version 1
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>ren Farm moo
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:57 am    <DIR>          .
+29/09/2023  11:57 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:56 am    <DIR>          moo
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:57 am            37,768 Program.cs
+29/09/2023  11:53 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               5 File(s)         45,045 bytes
+               6 Dir(s)  487,653,326,848 bytes free
+
+----------PROBE RUNTIME ERROR cause of name change from Farm to moo------------
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>Program.exe
+
+Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Farm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f913a8f0098e4d41' or one of its dependencies. The system cannot find the file specified.
+   at MainClass.Main()
+----------PROBE RUNTIME ERROR cause of name change from Farm to moo------------END
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>ren moo Farm
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>Program.exe
+Kulpots moooooooooooo version 1
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  12:00 pm    <DIR>          .
+29/09/2023  12:00 pm    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  11:56 am    <DIR>          Farm
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  12:00 pm            39,607 Program.cs
+29/09/2023  11:53 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               5 File(s)         46,884 bytes
+               6 Dir(s)  487,658,455,040 bytes free
 
 
 
@@ -612,7 +967,7 @@ Kulpots moooooooooooo version 1
  */
 
 
-//[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 
 //public class Cow
 //{

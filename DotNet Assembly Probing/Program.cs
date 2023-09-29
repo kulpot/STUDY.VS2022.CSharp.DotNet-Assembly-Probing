@@ -574,6 +574,36 @@ C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
                4 File(s)         26,505 bytes
                5 Dir(s)  487,660,802,048 bytes free
 
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probingcsc /r:Farm.dll Program.cs
+Microsoft (R) Visual C# Compiler version 4.7.0-3.23416.8 (43b0b05c)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly Probing
+
+29/09/2023  11:42 am    <DIR>          .
+29/09/2023  11:42 am    <DIR>          ..
+29/09/2023  11:29 am               189 App.config
+29/09/2023  11:29 am    <DIR>          bin
+29/09/2023  11:30 am             2,396 DotNet Assembly Probing.csproj
+29/09/2023  05:17 am             3,584 Farm.dll
+29/09/2023  11:39 am               596 KulpotKey.snk
+29/09/2023  11:29 am    <DIR>          obj
+29/09/2023  11:39 am            24,394 Program.cs
+29/09/2023  11:42 am             4,096 Program.exe
+29/09/2023  11:33 am    <DIR>          Properties
+               6 File(s)         35,255 bytes
+               5 Dir(s)  487,659,614,208 bytes free
+
+C:\Users\sunny\source\repos\DotNet Assembly Probing\DotNet Assembly ProbingProgram.exe
+Kulpots moooooooooooo version 1
+
+
+
 
 
 
